@@ -1,4 +1,7 @@
 # pages/1_Assets_Finder.py
+import sys
+import os
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
 import datetime as dt
 import streamlit as st
 from lib import config, providers, utils
