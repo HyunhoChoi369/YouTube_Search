@@ -1,6 +1,10 @@
 # app.py
+import sys, os
+sys.path.append(os.path.dirname(__file__))  # 현재 폴더를 모듈 경로에 추가
+
 import streamlit as st
-from lib import config
+from lib import config, providers, utils
+
 
 st.set_page_config(page_title="Shorts Asset Toolkit", layout="wide")
 st.title("🎬 Shorts Asset Toolkit")
